@@ -1,7 +1,7 @@
 {
     "name": "tw-better-select",
     "main": "dist/bundle.js",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "author": "Bill Yen <billyen2012@gmail.com>",
     "license": "MIT",
     "devDependencies": {

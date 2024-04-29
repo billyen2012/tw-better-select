@@ -5,13 +5,13 @@ Automatically grouping select options based on first character's phonetic symbol
 ## CDN
 
 ```
-<script src="https://unpkg.com/tw-better-select@1.0.3/dist/tw-better-select.min.js"></script>
+<script src="https://unpkg.com/tw-better-select@1.0.4/dist/tw-better-select.min.js"></script>
 ```
 
 ## Download compressed file
 
 ```
-https://unpkg.com/tw-better-select@1.0.3/dist/tw-better-select.min.js.gz
+https://unpkg.com/tw-better-select@1.0.4/dist/tw-better-select.min.js.gz
 ```
 
 ## Example
@@ -53,11 +53,11 @@ https://unpkg.com/tw-better-select@1.0.3/dist/tw-better-select.min.js.gz
             <option value="烏來區">烏來區</option>
         </select>
     </body>
-    <script src="https://unpkg.com/tw-better-select@1.0.3/dist/tw-better-select.min.js"></script>
+    <script src="https://unpkg.com/tw-better-select@1.0.4/dist/tw-better-select.min.js"></script>
     <script>
-        // if statement is for backward compatibility since unpkg is not guarantee 100% uptime even though is is backed by  CloudFlare
-        if (TwBetterSelect) {
-            const select = new TwBetterSelect('district')
+        // if statement is for backward compatibility since unpkg is not guarantee 100% uptime even though is is backed by CloudFlare
+        if (typeof TwBetterSelect !== 'undefined') {
+            const select = new TwBetterSelect('district');
         }
     </script>
 </html>
@@ -74,8 +74,8 @@ Result:
 options inside the select tag will be re-rendered. useful when you need to fetch options from remote resources or dynamically change the select options based other other configuration.
 
 ```js
-const select = new TwBetterSelect('select-id')
-select.refresh()
+const select = new TwBetterSelect('select-id');
+select.refresh();
 ```
 
 ## Properties:
@@ -85,7 +85,7 @@ select.refresh()
 a collection of nodes for option groups and the options for each of the group
 
 ```js
-const select = new TwBetterSelect('select-id')
-select.optGroups[0] // this will be <optgroup></optgroup>
-select.optGroups[0][0] // this will be the <option></option> for child node of <optgroup></optgroup> above
+const select = new TwBetterSelect('select-id');
+select.optGroups[0]; // this will be <optgroup></optgroup>
+select.optGroups[0][0]; // this will be the <option></option> for child node of <optgroup></optgroup> above
 ```
