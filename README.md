@@ -5,13 +5,13 @@ Automatically grouping select options based on first character's phonetic symbol
 ## CDN
 
 ```
-<script src="https://unpkg.com/tw-better-select@1.0.4/dist/tw-better-select.min.js"></script>
+<script src="https://unpkg.com/tw-better-select@1.0.5/dist/tw-better-select.min.js"></script>
 ```
 
 ## Download compressed file
 
 ```
-https://unpkg.com/tw-better-select@1.0.4/dist/tw-better-select.min.js.gz
+https://unpkg.com/tw-better-select@1.0.5/dist/tw-better-select.min.js.gz
 ```
 
 ## Example
@@ -53,7 +53,7 @@ https://unpkg.com/tw-better-select@1.0.4/dist/tw-better-select.min.js.gz
             <option value="烏來區">烏來區</option>
         </select>
     </body>
-    <script src="https://unpkg.com/tw-better-select@1.0.4/dist/tw-better-select.min.js"></script>
+    <script src="https://unpkg.com/tw-better-select@1.0.5/dist/tw-better-select.min.js"></script>
     <script>
         // if statement is for backward compatibility since unpkg is not guarantee 100% uptime even though is is backed by CloudFlare
         if (typeof TwBetterSelect !== 'undefined') {
