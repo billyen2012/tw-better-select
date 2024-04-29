@@ -13,7 +13,7 @@
     },
     "scripts": {
         "build": "npx webpack build --mode=production",
-        "dev": "node index.js",
+        "dev": "node ./src/local-dev.js",
         "watch": "webpack --watch",
         "publish": "npm run build && npx changeset publish",
         "changeset": "npx changeset"
