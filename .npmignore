@@ -13,6 +13,5 @@ src
 CHANGELOG.md
 .github
 .changeset
-local-dev.js
 webpack.config.js
 .prettierrc
