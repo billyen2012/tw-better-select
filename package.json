@@ -17,5 +17,9 @@
         "watch": "webpack --watch",
         "publish": "npm run build && npx changeset publish",
         "changeset": "npx changeset"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/billyen2012/tw-better-select"
     }
 }
